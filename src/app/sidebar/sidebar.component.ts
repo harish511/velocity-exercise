@@ -7,7 +7,6 @@ import { RestProviderService } from '../rest-provider.service';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-  @Input() searchText: string;
   public peopleList;
 
   constructor(public peopleService:RestProviderService) { 
