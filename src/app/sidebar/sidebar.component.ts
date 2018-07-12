@@ -10,7 +10,7 @@ export class SidebarComponent implements OnInit {
   public peopleList;
 
   constructor(public peopleService:RestProviderService) { 
-    this.peopleList=peopleService.peopleList;
+    this.peopleList=peopleService.peopleList ||[];
   }
 
   selectPerson(person){
