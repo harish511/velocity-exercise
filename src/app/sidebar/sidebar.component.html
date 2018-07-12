@@ -1,11 +1,7 @@
 
-
-
 <div class="peopleList">
-<input [(ngModel)]='searchText'class="form-control" type="text" placeholder="Search" aria-label="Search">
-
   <ul>
-    <li (click)="selectPerson(person)" *ngFor="let person of peopleList | filter:searchText">
+    <li (click)="selectPerson(person)" *ngFor="let person of peopleList | filter:getSearchText()">
       <div>{{person.name}}</div>
     </li>
   </ul>

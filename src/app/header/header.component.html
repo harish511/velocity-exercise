@@ -1,8 +1,18 @@
-   <div>  
-       <div class='searchInput'> 
-      </div>
-    <div class='userInfo'>
-        <span>Peter Hoang</span>
-        <span class='accountIcon'></span>
-    </div>
-   </div>
+ <div class="row">
+          <div class="col-4">
+                <div class='searchInput'> 
+                        <input [(ngModel)]='searchText'class="form-control" (ngModelChange)="searchPeople($event)" type="text" placeholder="Search" aria-label="Search">
+                </div>
+          </div>
+        
+          <div class="col">
+        
+          </div>
+          <div class="col">
+                <div class='userInfo'>
+                        <span>Peter Hoang</span>
+                        <span class='accountIcon'></span>
+                    </div>
+              </div>
+        </div>
+      

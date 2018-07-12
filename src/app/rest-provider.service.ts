@@ -102,8 +102,16 @@ export class RestProviderService {
   ];
 
   public selectedPerson=this.peopleList[0];
+  private searchText="";
   constructor(private http:Http) { 
     
+  }
+
+  setSearchText(searchText){
+    this.searchText=searchText;
+  }
+  getSearchText(){
+    return this.searchText;
   }
 
   getPeople(){

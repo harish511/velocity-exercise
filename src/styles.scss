@@ -9,13 +9,7 @@
     background-size: cover;
 }
 
-.searchInput{
-    float:left;
-}
 
-.userInfo{
-    float:right;
-}
 
 .peopleList{
     
@@ -32,14 +26,25 @@
         border-bottom: none;
     }
 
-    width:25%;
 }
 
 .personDetails{
     float: right;
-    margin-right: 39%;
+    margin-right: 20%;
 }
 
+.sendMessage{
+    display: inline-block;
+    margin-left:100px;
+}
+
+.cover{
+    display: inline-block;
+    &>img{
+        height: 100px;
+    }
+    
+}
 
 .app-details{
     clear:both;

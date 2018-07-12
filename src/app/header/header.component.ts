@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RestProviderService } from '../rest-provider.service';
 
 @Component({
   selector: 'app-header',
@@ -7,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public peopleService:RestProviderService) { }
 
   ngOnInit() {
   }
 
-  searchPerson(event){
-console.log(event);
+  searchPeople(newValue){
+    this.peopleService.setSearchText(newValue);
   }
 
 }

@@ -1,19 +1,22 @@
 <div class="personDetails">
   <div>
-    <img [src]="getSelectedPerson().img"/>
-    <button type="button" class="btn btn-secondary">SEND MESSAGE!</button>
-  <div class="rating">   
-    <div  *ngFor="let i of numbers">
-      
-        <span *ngIf="i <= getSelectedPerson().rating" class="icon-heart"></span> 
-        <span *ngIf="i > getSelectedPerson().rating" class="icon-heart-empty"></span>     
-        
-      </div> 
-       
-  </div>
+    <div class="cover">
+        <img  [src]="getSelectedPerson().img"/>
+    </div>
+    
+    <div class="sendMessage">
+        <button type="button" class="btn btn-secondary">SEND MESSAGE!</button>
+        <div class="rating">   
+          <div  *ngFor="let i of numbers">
+              <span *ngIf="i <= getSelectedPerson().rating" class="icon-heart"></span> 
+              <span *ngIf="i > getSelectedPerson().rating" class="icon-heart-empty"></span>     
+            </div>    
+        </div>
+    </div>
+    
   </div>
 
-  <div class="description"></div>
+  <div class="description">{{getSelectedPerson().Description}}</div>
 <div>
   <table class="table">
       <thead>

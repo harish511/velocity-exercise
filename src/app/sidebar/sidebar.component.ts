@@ -17,6 +17,10 @@ export class SidebarComponent implements OnInit {
       this.peopleService.selectedPerson=person;
   }
 
+  getSearchText(){
+    return this.peopleService.getSearchText();
+  }
+
   ngOnInit() {
   }
 
